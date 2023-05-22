@@ -1,0 +1,15 @@
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "name": "Flamarion",
+    "whatsapp": 71984707037,
+    "email": "mesmo245@gmail.com",
+    "message": "Hi people!",
+    "genre": "Hetero",
+    "music": "jazz, rock, erudita",
+    "sports": "MMA, futebol, boxe"
+}
+
+###
+GET http://localhost:3003/users
