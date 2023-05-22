@@ -1,11 +1,14 @@
 const mysql = require('mysql')
+const { config } = require('dotenv')
+
+config()
 
 
 const con = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'alfadb',
-    database: 'super_form'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_SCHEMA
 })
 
 con.connect(error=>{
